@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <title>Bootstrap com LC</title>
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link{
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            background-color: #ffffff;
+            padding-top: 70px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+
+        img {
+            width: 100vh;
+        }
+
+        #grid-section .item {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Bootstrap com LC</h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#carousel">Carousel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#layout">Layout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#card">Card</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="carousel">
+            <h2>Carousel</h2>
+            <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="1000" class="carousel-item active">
+                        <img src="https://media.istockphoto.com/id/1441137601/pt/foto/sugarloaf-mountain-under-a-pink-sky.webp?s=2048x2048&w=is&k=20&c=e8ISHn9aKjpOBaGzgfEKBwsUB1s859a8quqD4XPnVlM=">
+                    </div>
+                    <div data-bs-interval="1000" class="carousel-item">
+                        <img src="https://media.istockphoto.com/id/1283252683/pt/foto/highway-crossing-in-campinas-at-dawn-seen-from-above-sao-paulo-brazil.webp?s=2048x2048&w=is&k=20&c=AufLfiX3qSee-NDS5nZ-M2xXoWSjrXsUjTAfxdMLnJ8=">
+                    </div>
+                    <div data-bs-interval="1000" class="carousel-item">
+                        <img src="https://media.istockphoto.com/id/1369791310/pt/foto/view-of-the-iguazu-falls-border-between-brazil-and-argentina.webp?s=2048x2048&w=is&k=20&c=ZJ0B1fvGHNu7msqTwmZETiQRjDYH8EAoh9RIQhLZeI8=">
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+        <section id="layout">
+            <h2>Layout</h2>
+            <section id="grid-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="item">Item 1</div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="item">Item 2</div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="item">Item 3</div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="item">Item 4</div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="item">Item 5</div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="item">Item 6</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="container">
+            </div>
+        </section>
+        <section id="card">
+            <h2>Card</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Rio de Janeiro
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Conheça a cidade mais bela do Brasil!</h4>
+                                <h5 class="card-subtitle">Pontos turísticos, o que fazer e mais</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Cataratas de Foz
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Saiba tudo sobre as cataratas de Foz</h4>
+                                <h5 class="card-subtitle">Foz do Iguaçu e a sua catarata</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Campinas
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Conheça Campinas</h4>
+                                <h5 class="card-subtitle">Tudo para se fazer na cidade</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
